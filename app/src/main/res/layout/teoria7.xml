@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="">
+
+            <TextView
+                android:text="Complemento Práctica 7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="31dp"
+                android:id="@+id/textView" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Bencenos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Sustituido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Nomenclatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Ejemplo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Monosustituidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Sustituyente \nalfabetico \n+ Benceno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Etilbenceno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Disustituidos
+(Orto, Para, Meta)"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Sustituyente \nalfabetico benceno \nSustituyente + \nnombre común del \nmonosustituido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="1-amina-3-terpentil\nbenceno \n3-terpentilanilina \nm-aminaterpentil\nbenceno \nm-terpentilanilina"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Polisustituidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="Sustituyente alfa-\nbetico benceno\nSustituyentes alfa-\nbetico + nombre \ncomún del \nmonosustituido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+                    <TextView
+                        android:text="4-cloro-1-metil-\n2-nitrobenceno \n4-cloro-2-\nnitrotolueno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+            </TableLayout>
+
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="320px"
+        android:layout_height="240px"/>
+
+</RelativeLayout>

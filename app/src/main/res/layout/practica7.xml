@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="">
+
+            <TextView
+                android:text="Práctica 7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="31dp"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:text="Nomenclatura de los Hidrocarburos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="COMPETENCIA: Aplica la nomenclatura sistemática (IUPAC) para los ALCANOS, ALQUENOS y ALQUINOS. Utilizando modelos de unicel, representa los primeros compuestos de dichos hidrocarburos." />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="14dp"
+                android:text="Antecedentes
+Se conocen como HIDROCARBUROS a los compuestos orgánicos formados únicamente por Carbono e Hidrógeno. Sí en la composición sólo intervienen enlaces simples entre carbono-carbono, se llaman ALCANOS y son SATURADOS, ya que sólo un par de electrones es compartido entre los carbonos. Los compuestos que contienen dobles enlaces entre carbono-carbono se llaman ALQUENOS y los compuestos que contienen triples enlaces entre carbono-carbono se llaman ALQUINOS. Los nombres de los cuatro primeros ALCANOS LINEALES son METANO, ETANO, PROPANO y BUTANO. Del quinto término en adelante, se nombran utilizando un prefijo griego ó latino que indique el número de átomos de carbono y la terminación ANO." />
+
+            <TextView
+                android:text="  Completa la siguiente tabla:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView8"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7" />
+
+            <ViewAnimator
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_marginTop="24dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Fórmula semidesarrollada"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <TextView
+                        android:text="Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"
+                        android:text="n-Propano" />
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"
+                        android:text="CH3-(CH2)5-CH3"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Decano"/>
+
+                    /></TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="31dp"
+                android:text="Los carbonos que forman parte de una cadena (compuesto) se pueden clasificar como PRIMARIOS, SECUNDARIOS, TERCIARIOS o CUATERNARIOS según estén unidos directamente con uno, dos, tres o cuatro Carbonos de la misma cadena." />
+
+            <TextView
+                android:text="En la siguiente cadena indica que carbono es PRIMARIO, SECUNDARIO, TERCIARIO o CUATERNARIO."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="31dp"
+                android:id="@+id/textView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cadenapractica7"
+                tools:layout_height="130dp"
+                tools:layout_width="130dp"
+                android:layout_gravity="center"/>/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="CH3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="CH"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="C"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="CH2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Al perder un átomo de Hidrógeno, un ALCANO se convierte en RADICAL ALQUILO, pudiendo provenir este hidrógeno de un carbono PRIMARIO (CH3-), SECUNDARIO (-CH2-) o TERCIARIO (-CH-)" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Los RADICALES ALQUILO se nombran cambiando la terminación ANO del ALCANO por IL o ILO y algunas veces además se utilizan los prefijos SEC, ISO y TER dependiendo del Carbono que provengan." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Completa la siguiente tabla:" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Fórmula"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <TextView
+                        android:text="Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:text="n-Propilo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="CH3-CH-CH2-CH3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Para nombrar a los ALCANOS ARBORESCENTES, en primer lugar, se mencionan a los radicales por orden alfabético, luego la cadena más larga con terminación ANO y dependiendo del número de carbonos de ésta se antepondrá el prefijo griego o latino correspondiente, indicando con el número más pequeño posible la posición de cada radical." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Para nombrar a ALQUENOS y a ALQUINOS, se aplican las mismas reglas empleadas en ALCANOS, cambiando la terminación ANO por ENO o por INO según se trate, indicando con el número más pequeño posible la posición del DOBLE o TRIPLE ENLACE." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:text="Completa la siguiente tabla:" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Fórmula"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <TextView
+                        android:text="Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:text="3-etil-2-metilpentano"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    /></TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="CH3-CH = CH-CH-CH3
+          |
+         CH3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:paddingRight="3dp"/>
+
+                    <Spinner
+                        android:id="@+id/o1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    /></TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
